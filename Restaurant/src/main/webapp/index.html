@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Register</title>
+ <link rel="stylesheet" type="text/css" href="styleRegister.css">
+</head>
+<body>
+    <h2>User Registration</h2>
+    <form action="RegisterServlet" method="post">
+        Username: <input type="text" name="username" required><br><br>
+        Password: <input type="password" name="password" required><br><br>
+        email: <input type="text" placeholder="abcd@gmail.com" name="email" required><br><br>
+        phone: <input type="number" name="phone" required><br><br>
+        address: <input type="text" name="address" required><br><br>
+         Role: <label for="role">user</label>
+            <input type="radio" name="role">
+            <label for="role">restaurant seller</label>
+            <input type="radio" name="role">
+            <label for="role">developer</label>
+            <input type="radio" name="role">
+        <input type="submit" value="Register">
+    </form>
+    <p>Already registered? <a href="login.html">Login here</a></p>
+</body>
+</html>
